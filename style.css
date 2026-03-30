@@ -1,45 +1,32 @@
-/* Personalización general */
-body {
-    font-family: 'Fira Code', 'Courier New', monospace;
-    line-height: 1.6;
+/* 1. Reset base para evitar cortes */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+    background-color: #000; 
+    font-family: 'Fira Code', monospace;
 }
 
-/* Colores personalizados alineados a tu terminal */
-:root {
-    --bs-primary: #0d6efd; 
-    --bs-info: #0dcaf0;
+/* 2. Contenedor principal adaptable */
+.container {
+    max-width: 1100px;
+    margin-top: 2rem;
+    margin-bottom: 5rem; 
 }
 
-/* Efectos en las tarjetas */
-.card, .list-group-item, header {
-    transition: transform 0.2s ease, border-color 0.2s ease;
+/* 3. Estilo de tarjetas  */
+.card {
+    background-color: #0a0a0a !important; 
+    border: 1px solid #333 !important;
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-3px);
-    border-color: var(--bs-info) !important;
+    border-color: #0d6efd !important; 
 }
 
-/* Scroll suave para navegación */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Estilo para los títulos de sección */
-h2 {
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-
-/* Badges con borde para un look más "retro-futurista" */
-.badge {
-    font-weight: 300;
-}
-
-/* Responsividad extra para móviles */
-@media (max-width: 768px) {
-    header {
-        text-align: center;
-        border-top: 4px solid var(--bs-primary);
-    }
+/* 4. Arreglo para el texto que se desborda */
+p, li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
