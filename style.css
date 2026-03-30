@@ -6,7 +6,7 @@ body {
 
 /* Colores personalizados alineados a tu terminal */
 :root {
-    --bs-primary: #0d6efd; /* Puedes cambiar este azul por un verde terminal #00ff00 si prefieres */
+    --bs-primary: #0d6efd; 
     --bs-info: #0dcaf0;
 }
 
