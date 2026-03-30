@@ -16,13 +16,13 @@ html, body {
 
 /* 3. Estilo de tarjetas  */
 .card {
-    background-color: #0a0a0a !important; 
-    border: 1px solid #333 !important;
+    background-color: #0a0a0a; 
+    border: 1px solid #333;
     transition: 0.3s;
 }
 
 .card:hover {
-    border-color: #0d6efd !important; 
+    border-color: #0d6efd; 
 }
 
 /* 4. Arreglo para el texto que se desborda */
